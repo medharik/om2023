@@ -1,0 +1,71 @@
+*{
+margin: 0;
+padding: 0;
+}
+h2{
+    color: rgba(2, 66, 13, 0.709);
+    background: rgba(0, 128, 0, 0.264);
+}
+a{
+    background: deepskyblue;
+    border: solid;
+    width: 100px;
+    /* display: block;
+    padding: 20px; */
+
+}
+.container{
+    background: pink;
+}
+.container >div{
+border: solid;
+}
+#gauche{
+    background: green;
+}
+#droite{
+    background: rgb(128, 0, 0);
+}
+.dimension{
+    width: 50%;
+    height: 500px;
+}
+.important{
+    display: inline;
+    /* width: 10px; */
+    color: red;
+    background: pink;
+}
+
+img{
+    width: 100px;
+}
+
+div + h2 {
+    border:solid;
+}
+a[href^="#"]{
+color: white;
+background: red;
+}
+a[href*="http"]{
+color: white;
+background: rgb(255, 217, 0);
+}
+a:visited{
+    color: purple;
+}
+a:focus{
+    color: red;
+}
+
+
+ input[type=radio]:checked {
+    border: 1px solid black;
+    width: 100px;
+ }
+ p:after{
+
+    content: "**********";
+    display: block;
+ }

@@ -1,0 +1,17 @@
+body{
+    background: rgba(128, 0, 128, 0.20) !important;
+    color: rgba(0, 0, 0, 0.885);
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    background: rgba(255, 92, 4, 0.161);
+    padding: 10px;
+    margin: 40px;
+    border: solid;
+}
+p{
+    text-indent: 30px;
+    
+}
+/* CSS : CASCADING STYLE SHEET */

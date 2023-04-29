@@ -1,0 +1,30 @@
+*{
+    margin: 0;padding: 0;
+}
+.container{
+    width: 1000px;
+    height: 500px;
+    /* background: orange; */
+    margin: auto;
+}
+.gauche{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.droite{
+    width: 50%;
+    height: 100%;
+    float: right;
+    /* background: rgb(0, 128, 43); */
+}
+.gauche img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.droite > div{
+/* background: yellow; */
+margin-top: 150px;
+padding: 20px;
+}

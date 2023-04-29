@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>les formulaires en html</title>
+  </head>
+  <body>
+    <h2>Formulaire de connexion</h2>
+
+    <form action="http://google.com" method="post">
+      Login : <input type="text" name="login" /> <br />
+      mot de passe : <input type="password" name="pwd" /> <br />
+      <button>Connexion</button>
+    </form>
+
+    <h2>Formulaire de connexion avec un tableau</h2>
+
+    <form action="http://google.com" method="post">
+      <table border="0" align="center">
+        <tr>
+          <td><label for="log">Login</label></td>
+          <td><input  placeholder="Votre email" required type="text" name="login" id="log" /></td>
+        </tr>
+        
+        <tr>
+          <td><label for="passe">Mot de passe :</label></td>
+          <td><input placeholder="votre mot de passe" required type="password" name="passe" id="passe" /></td>
+        </tr>
+        <tr>
+          <td><label for="passe">Genre :</label></td>
+          <td>
+            <label for="homme">Homme : </label>
+            <input required type="radio" name="genre" id="homme" value="homme" />
+            <label for="femme">Femme : </label>
+            <input checked required type="radio" name="genre" id="femme" value="femme" />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><label for="x">Se rappeler du login :</label><input checked type="checkbox" name="h[] q" id="x" value="log" />
+            <label for="y">Se rappeler du Mot de passe  :</label><input type="checkbox" name="h[]" id="y" value="pas" />
+          
+          </td>
+        </tr>
+        <tr>
+          <td><label for="pays">Pays</label></td>
+          <td> <select name="pays" id="pays" multiple size="2" required>
+            <option value="" selected>...</option>
+            <option value="mar">Maroc</option>
+            <option value="sen">Senegal</option>
+            <option value=""   >Autres</option>
+          </select></td>
+        </tr>
+<tr>
+  <td>
+    <label for="adresse">Adresse : </label>
+    <td><textarea name="adresse" id="adresse" cols="30" rows="3" placeholder="votre adresse"></textarea></td>
+  </td>
+</tr>
+<tr>
+  <td>AUTRES INPUT : </td>
+  <td> <input type="color" name="c" id="c">
+  <input type="date" name="d" id="">
+  <input type="datetime-local" name="d" id="">
+  Salaire <input type="number" min="3000" max="10000" step="any">
+  <input type="range" min="0" max="100" value="20" step="10">
+  <input type="search">
+  <input type="tel">
+
+
+
+  </td>
+</tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Valider">
+            <input type="reset" value="Annuler"><input onclick="print()" type="button" value="fait ce que tu veux">
+            <button >Valider 2</button>
+            <button type="reset">Annuler 2</button>
+            <button type="button">A programmer</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

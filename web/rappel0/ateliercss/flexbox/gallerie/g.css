@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* les elements html gardent la meme taille qd on ajoute la bordure */
+    box-sizing: border-box;
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    align-content: flex-start;
+}
+
+ .container img{
+width: calc(25% - 20px);
+height: calc(25% - 10px);
+object-fit: cover;
+}

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background: #00253f;
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    color: #81d6b8;
+    display: flex;
+}
+.item{
+    border: 5px solid white ;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    /* background: yellow; */
+}
+.item img{
+   width: 100%; 
+   height: 80%;
+   object-fit: cover;
+   object-position: 55%;
+}
+#i1{
+    width: 40%;
+    padding: 30px;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+p{
+    font-size:1rem;
+    color: white;
+}
+#obama{
+    order: 1;
+}
+#x{
+    order: 0;
+}
+#y{
+    order: 2;
+}
+
+
+@media print {
+    #obama{
+        display: none;
+    }
+}
+@media screen  and (max-width: 1000px) {
+   .container{
+    width: 100%;
+    
+   }
+  }
+@media screen  and (max-width: 560px) {
+   .container{
+    width: 100%;
+    flex-direction: column;
+
+   }
+   .item{
+    width: 100%;
+   }
+   #i1{
+    width: 100%;
+   }
+  }
+
+  @media screen     and (max-width: 800px) {
+
+    .container{
+        background: red;
+    }
+  }
