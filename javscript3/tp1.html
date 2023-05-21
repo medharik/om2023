@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <div style="text-align: center; ;margin-bottom: 30px;">
+    Produits: <input type="text" name="produits" id="produits">
+    Quantite : <input type="text" name="qte" id="qte">
+    prix : <input type="text" name="" id="prix">
+    <button onclick="traiter()">+</button>
+   </div>
+<br>
+    <table border="1" width="500" align="center"> 
+        <thead>
+            <tr>
+                <th>Produits</th>
+                <th>Qte</th>
+                <th>prix</th>
+                <th>Total ligne </th>
+            </tr>
+        </thead>
+        <tbody id="corps">
+            
+        </tbody>
+
+
+    </table>
+    <script>
+        let prods=document.getElementById('produits');
+        let qte=document.getElementById('qte');
+        let prix=document.getElementById('prix');
+        let corps=document.getElementById('corps');
+        let produits=[];
+        let ligne={};
+function traiter() {
+    ligne={libelle: prods.value,prix: prix.value,qte:qte.value}
+    produits.push(ligne);
+    console.log(produits);
+
+    tracerTableauHTML();
+}
+
+function tracerTableauHTML(){
+    corps.innerHTML=""
+for (let i = 0; i < produits.length; i++) {
+   corps.innerHTML+=`
+   <tr>
+                <th>${produits[i].libelle}</th>
+                <th>${produits[i].qte}</th>
+                <th>${produits[i].prix}</th>
+                <th>Total ligne </th>
+            </tr>
+   `
+    
+}
+}
+
+    </script>
+</body>
+</html>
